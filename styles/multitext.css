@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.multitext::after{
+    content: "";
+    animation: change 7s linear infinite;
+}
+
+@keyframes change{
+    0% {
+        content: "Sashen";
+        animation:smooth 1s linear;
+    }
+    33% {
+        content: "Matheesha";
+        animation:smooth 1s linear;
+    }
+    66%{
+        content: "SASHEN";
+        animation:smooth 1s linear;
+    }
+    100%{
+        content: "Matheesha";
+        animation:smooth 1s linear;
+    }
+}
+
+@keyframes smooth{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
